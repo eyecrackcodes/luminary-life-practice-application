@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary Life Sandbox</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="images/logo.png" alt="Luminary Life Logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">FEX</span>
+                    <span class="profession">eApp Sandbox</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle' ></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <a href="#">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </a>
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#rate-quote">
+                            <i class='bx bx-purchase-tag-alt icon'></i>
+                            <span class="text nav-text">Rate Quote</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#purposed-insured">
+                            <i class='bx bx-user-pin icon'></i>
+                            <span class="text nav-text">Purposed Insured</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#medical-questions">
+                            <i class='bx bx-capsule icon'></i>
+                            <span class="text nav-text">Medical Questions</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#payment-info">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Payment Info</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#replacement">
+                            <i class='bx bx-spreadsheet icon'></i>
+                            <span class="text nav-text">Replacement</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#beneficiary">
+                            <i class='bx bx-donate-heart icon'></i>
+                            <span class="text nav-text">Beneficiary</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Exit Application</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="rate-quote" class="rate-quote">
+        <div class="card">
+            <h2>Rate Class</h2>
+            <div class="question">
+                <label for="rate-class">Rate Class:</label>
+                <select id="rate-class" name="rate-class">
+                    <option value="level">Level</option>
+                    <option value="graded">Graded</option>
+                    <option value="gi">GI</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h2>State</h2>
+            <div class="question">
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h2>Date of Birth</h2>
+            <div class="question">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Age</h2>
+            <div class="question">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Auto-calculated" readonly>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h2>Face Amount</h2>
+            <div class="question">
+                <label for="face-amount">Face Amount:</label>
+                <input type="number" id="face-amount" name="face-amount" placeholder="Enter face amount">
+            </div>
+        </div>
+    
+        <div class="card">
+            <h2>Gender</h2>
+            <div class="question">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Get Quote</h2>
+            <div class="question">
+                <button onclick="calculateQuote()">Get Quote</button>
+            </div>
+        </div>
+        <div class="card" id="quote-result-card">
+            <h2>Quote Result</h2>
+            <div class="question" id="quote-result">
+                <!-- Quote result will be displayed here -->
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="purposed-insured" class="purposed-insured">
+        <div class="card">
+            <h2>Purposed Insured Information</h2>
+            <div class="question">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="question">
+                <label for="middle-initial">Middle Initial:</label>
+                <input type="text" id="middle-initial" name="middle-initial" placeholder="Leave blank if no middle name">
+            </div>
+            <div class="question">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
+        <div class="card">
+            <h2>Home Address</h2>
+            <div class="question">
+                <label for="home-address-line1">Home Address Line 1:</label>
+                <input type="text" id="home-address-line1" name="home-address-line1">
+            </div>
+            <div class="question">
+                <label for="home-address-line2">Home Address Line 2:</label>
+                <input type="text" id="home-address-line2" name="home-address-line2" placeholder="Leave blank if none">
+            </div>
+            <div class="question">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+            </div>
+        </div>
+        <div class="card">
+            <h2>State and Zip Code</h2>
+            <div class="question">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="question">
+                <label for="zip-code">Zip Code:</label>
+                <input type="text" id="zip-code" name="zip-code">
+            </div>
+        </div>
+        <div class="card">
+            <h2>Contact Information</h2>
+            <div class="question">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number">
+            </div>
+            <div class="question">
+                <label for="alternate-phone-number">Alternate Phone Number:</label>
+                <input type="tel" id="alternate-phone-number" name="alternate-phone-number" placeholder="Leave blank if none">
+            </div>
+            <div class="question">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="card">
+            <h2>Personal Details</h2>
+            <div class="question">
+                <label for="ssn">Social Security Number:</label>
+                <input type="text" id="ssn" name="ssn">
+            </div>
+            <div class="question">
+                <label for="us-resident">Are you a legal resident of the United States?</label>
+                <select id="us-resident" name="us-resident">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Physical Information</h2>
+            <div class="question">
+                <label for="height-inches">Height (Inches):</label>
+                <input type="number" id="height-inches" name="height-inches">
+            </div>
+            <div class="question">
+                <label for="height-feet">Height (Feet):</label>
+                <input type="number" id="height-feet" name="height-feet">
+            </div>
+            <div class="question">
+                <label for="weight">Weight (in pounds):</label>
+                <input type="number" id="weight" name="weight">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Contact Preferences</h2>
+            <div class="question">
+                <label for="preferred-contact-method">Preferred Method of Contact:</label>
+                <select id="preferred-contact-method" name="preferred-contact-method">
+                    <option value="text">Text</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="postal-mail">Postal Mail</option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Tobacco Usage</h2>
+            <div class="question">
+                <label>
+                    <input type="radio" name="tobacco-usage" value="no"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="tobacco-usage" value="no"> No
+                </label>
+            </div>
+    </section>
+    
+    <section id="medical-questions">
+        <div class="card">
+            <h2>Medical Questions</h2>
+            <div class="question">
+                <label>1. Do you use a wheelchair or mobility scooter or do you have any physical or mental impairment requiring assistance from anyone with the follwoing activities of daily living: Taking medications, bathing, dressing, eating, toileting, getting in or out of bed or chair, or moving about?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="tobacco-usage" value="yes"> Yes</label>
+                    <label><input type="radio" name="tobacco-usage" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>2. Is the Proposed Insured currently:Hospitalized, in a nursing facility, or receiving Hospice Care?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="current-status" value="yes"> Yes</label>
+                    <label><input type="radio" name="current-status" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>3. Has a member of the medical profession ever diagnosed or treated the Proposed Insured for Acquired Immune Deficiency Syndrome (AIDS), AIDS Related Complex (ARC), or any immune deficiency disease; or has the Proposed Insured tested positive for the Human Immunodeficiency Virus (HIV)?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="hiv-status" value="yes"> Yes</label>
+                    <label><input type="radio" name="hiv-status" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>4. Has the Proposed Insured ever been diagnosed as having or been treated for:Congestive heart failure, or had or been recommended to have an organ transplant?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="diagnosed-status" value="yes"> Yes</label>
+                    <label><input type="radio" name="diagnosed-status" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>5. During the past 18 months has the Proposed Insured been diagnosed as having:Stroke, aneurysm, cardiomyopathy, or circulatory surgery?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="past-diagnosed-status" value="yes"> Yes</label>
+                    <label><input type="radio" name="past-diagnosed-status" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>6. During the past 24 months, has the Proposed Insured been diagnosed as having, or been treated for:Internal Cancer, Melanoma, or Leukemia?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="recent-diagnosed-status" value="yes"> Yes</label>
+                    <label><input type="radio" name="recent-diagnosed-status" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>7. During the past 18 months, has the Proposed Insured been diagnosed as having:A condition expected to result in death within 12 months?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="recent-diagnosed-status-2" value="yes"> Yes</label>
+                    <label><input type="radio" name="recent-diagnosed-status-2" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>8. During the past 24 months, has the Proposed Insured been diagnosed as having, or been treated for:Stroke, angina (chest pain), heart attack, or cardiomyopathy?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="diagnosed-status-2" value="yes"> Yes</label>
+                    <label><input type="radio" name="diagnosed-status-2" value="no"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>9. During the past 24 months, has the Proposed Insured been diagnosed as having, or been treated for:Emphysema, chronic obstructive pulmonary disease (COPD), or tuberculosis (TB)?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="diagnosed-status-3" value="yes"> Yes</label>
+                    <label><input type="radio" name="diagnosed-status-3" value="no"> No</label>
+                </div>
+            </div>
+            <script>
+                document.querySelectorAll('[name="tobacco-usage"], [name="current-status"], [name="hiv-status"], [name="diagnosed-status"], [name="past-diagnosed-status"], [name="recent-diagnosed-status"], [name="recent-diagnosed-status-2"]').forEach(function(radio) {
+                    radio.addEventListener('change', function() {
+                        if (this.value === 'yes') {
+                            alert("If any answer to questions 1 through 7 is YES, the Proposed Insured is not eligible for ANY coverage.");
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </section>
+    
+    <section id="payment-info">
+        <div class="card">
+            <h2>Payment Information</h2>
+            <div class="question">
+                <label for="bank-name">Bank Name:</label>
+                <input type="text" id="bank-name" name="bank-name" placeholder="Enter bank name">
+            </div>
+            <div class="question">
+                <label for="routing-number">Routing Number:</label>
+                <input type="text" id="routing-number" name="routing-number" placeholder="Enter routing number">
+            </div>
+            <div class="question">
+                <label for="account-number">Account Number:</label>
+                <input type="text" id="account-number" name="account-number" placeholder="Enter account number">
+            </div>
+            <div class="question">
+                <label for="draft-day">Draft Day:</label>
+                <select id="draft-day" name="draft-day">
+                    <option value="1st">1st of the month</option>
+                    <option value="3rd">3rd of the month</option>
+                    <option value="2nd-wed">2nd Wednesday of the month</option>
+                    <option value="3rd-wed">3rd Wednesday of the month</option>
+                    <option value="4th-wed">4th Wednesday of the month</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="payor-signature">Payor's Signature:</label>
+                <input type="text" id="payor-signature" name="payor-signature" placeholder="Enter first and last name">
+            </div>
+            <div class="question">
+                <button onclick="validateRoutingNumber()">Validate Bank</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="replacement">
+        <div class="card">
+            <h2>Replacement Forms</h2>
+            <div class="question">
+                <label for="existing-insurance">1. Does the Purposed Insured have any EXISTING or APPLIED FOR INSURANCE in the last 12 months</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="existing-insurance" value="yes" onchange="toggleExistingInsuranceDetails()"> Yes</label>
+                    <label><input type="radio" name="existing-insurance" value="no" onchange="toggleExistingInsuranceDetails()"> No</label>
+                </div>
+            </div>
+            <div id="existing-insurance-details" style="display: none;">
+                <div class="question">
+                    <label for="existing-insurance-company">Company:</label>
+                    <input type="text" id="existing-insurance-company" name="existing-insurance-company" placeholder="Enter company name">
+                </div>
+                <div class="question">
+                    <label for="existing-insurance-type">Type:</label>
+                    <div class="checkbox-options">
+                        <label><input type="checkbox" name="existing-insurance-type" value="life"> Life Insurance</label>
+                        <label><input type="checkbox" name="existing-insurance-type" value="annuity"> Annuity</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label for="existing-insurance-amount">Amount:</label>
+                    <input type="text" id="existing-insurance-amount" name="existing-insurance-amount" placeholder="Enter face amount">
+                </div>
+            </div>
+            <div class="question">
+                <label for="replacement">2. REPLACEMENT</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="replacement" value="yes" onchange="toggleReplacementDetails()"> Yes</label>
+                    <label><input type="radio" name="replacement" value="no" onchange="toggleReplacementDetails()"> No</label>
+                </div>
+            </div>
+            <div id="replacement-details" style="display: none;">
+                <div class="question">
+                    <p>Complete state replacement forms, if required, with this application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficiary">
+        <div class="card">
+            <h2>Beneficiary</h2>
+            
+            <!-- Primary Beneficiary -->
+            <div class="beneficiary">
+                <h3>Primary Beneficiary</h3>
+                <div class="question">
+                    <label for="primary-percent">Percentage of proceeds</label>
+                    <input type="text" id="primary-percent" name="primary-percent" placeholder="Enter percentage">
+                </div>
+                <!-- Beneficiary details -->
+                <div class="beneficiary-details">
+                    <div class="question">
+                        <label for="name-primary">Name:</label>
+                        <input type="text" id="name-primary" name="name-primary" placeholder="Enter name">
+                    </div>
+                    <!-- Repeat similar details for Primary Beneficiary as done for Primary Beneficiary -->
+                </div>
+            </div>
+    
+            <!-- Contingent Beneficiary -->
+            <div class="beneficiary">
+                <h3>Contingent Beneficiary</h3>
+                <div class="question">
+                    <label for="contingent-percent">Percentage of proceeds</label>
+                    <input type="text" id="contingent-percent" name="contingent-percent" placeholder="Enter percentage">
+                </div>
+                <div class="question">
+                    <label for="contingent">CONTINGENT</label>
+                    <input type="checkbox" id="contingent" name="contingent">
+                </div>
+                <!-- Beneficiary details -->
+                <div class="beneficiary-details">
+                    <div class="question">
+                        <label for="name-contingent">Name:</label>
+                        <input type="text" id="name-contingent" name="name-contingent" placeholder="Enter name">
+                    </div>
+                    <!-- Repeat similar details for Contingent Beneficiary as done for Primary Beneficiary -->
+                </div>
+            </div>
+            
+            <!-- Additional instructions -->
+            <p class="additional-instructions">If you want to add more beneficiaries, ensure that the total percentage equals 100%.</p>
+        </div>
+    </section>
+    
+                <script>
+                    function toggleExistingInsuranceDetails() {
+                        var details = document.getElementById("existing-insurance-details");
+                        var radioButton = document.querySelector('input[name="existing-insurance"]:checked');
+                        if (radioButton && radioButton.value === "yes") {
+                            details.style.display = "block";
+                        } else {
+                            details.style.display = "none";
+                        }
+                    }
+                
+                    function toggleReplacementDetails() {
+                        var details = document.getElementById("replacement-details");
+                        var radioButton = document.querySelector('input[name="replacement"]:checked');
+                        if (radioButton && radioButton.value === "yes") {
+                            details.style.display = "block";
+                        } else {
+                            details.style.display = "none";
+                        }
+                    }
+                </script>
+
+   <script src="scirpt.js"></script>
+
+</body>
+</html>
